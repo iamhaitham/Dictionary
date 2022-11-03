@@ -1,4 +1,5 @@
 import { 
+    CircularProgress,
     IconButton, 
     InputBase, 
     Paper 
@@ -10,6 +11,7 @@ import axios from 'axios';
 
 const SearchBar = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSearchTermChange = (e) => {
         setSearchTerm(e.target.value);
@@ -24,15 +26,29 @@ const SearchBar = () => {
     }
 
     const handleSearchClick = async () => {
-        try {
-            if (!searchTerm)
-                return;
+        if (!searchTerm)
+            return;
 
+        try {
+            setIsLoading(true);
             const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`);
             console.log(response.data[0])
+            setIsLoading(false);
         } catch (error) {
             console.log(error);
+            setIsLoading(false);
         }
+    }
+
+    const determineIcon = () => {
+        if (isLoading)
+            return (
+                <CircularProgress size={ 25 }/>
+            );
+        else 
+            return (
+                <SearchIcon/>
+            );
     }
 
     return (
@@ -40,7 +56,7 @@ const SearchBar = () => {
             <Paper 
             component='form'
             sx={{ p: '2px 4px', display: 'flex', alignItems: 'center', width: 335, mt: '2rem' }}
-            elevation={3}
+            elevation={ 3 }
             >
                 <InputBase 
                 sx={{ ml: 1, flex: 1 }}
@@ -55,8 +71,9 @@ const SearchBar = () => {
                 aria-label='search'
                 color='primary'
                 onClick={ async () => await handleSearchClick() }
+                disabled={ isLoading }
                 >
-                    <SearchIcon/>
+                    { determineIcon() }
                 </IconButton>
             </Paper>
         </Wrapper>
