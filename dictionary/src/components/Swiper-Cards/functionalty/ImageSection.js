@@ -9,8 +9,8 @@ import "../index.css"
 
 const ImageSection = () => {
     return (
-        <div style={{ width: "100%", height: "100%" }}>
-            <div style={{ justifyContent: "center", marginLeft: "50%" }}>
+        <div className="FirstCon">
+            <div className='SecondCon'>
             </div>
             <div>
                 <AliceCarousel mouseTracking items={images.map((item) => <div>

@@ -3,7 +3,7 @@ import React from 'react'
 import ImageSection from './functionalty/ImageSection';
 
 
-const Swiper_Cards = () => {
+const SwiperCards = () => {
   return (
     <div className='Container'>
       <div className='SecondContainer'>
@@ -14,4 +14,4 @@ const Swiper_Cards = () => {
 }
 
 
-export default Swiper_Cards;
+export default SwiperCards;
