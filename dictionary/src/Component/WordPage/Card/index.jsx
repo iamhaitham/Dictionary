@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 import Grid from "@mui/material/Grid";
 
-const Card = ({ handleClose }) => {
+const Card = ({ handleClose,open }) => {
   return (
     <Grid
       container

@@ -16,7 +16,8 @@ const DialogNav = ({ handleClose }) => {
             onClick={handleClose}
             aria-label="close"
           >
-            <CloseIcon />
+            <CloseIcon className={styles.closeIcon}
+            />
           </IconButton>
         </Grid>
         <Grid item xs={1}>

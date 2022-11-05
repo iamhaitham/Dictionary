@@ -1,4 +1,3 @@
-.replyIcon {
-    color: unset;
-    /* Rotate */
+.replyIcon,.closeIcon {
+    color:#0f7ce4;
 }

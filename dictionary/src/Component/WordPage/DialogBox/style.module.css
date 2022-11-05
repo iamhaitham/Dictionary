@@ -19,3 +19,20 @@
     height: 100%;
   }
 }
+
+
+.title{
+  color: #456797;
+}
+.definition{
+color:#859dbb ;
+font-size: 16px;
+font-weight: 500; 
+}
+
+.questionTimer{
+  text-transform: uppercase;
+  color:#456797;
+  font-size: 14px;
+  font-weight: 500;
+}

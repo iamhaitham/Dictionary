@@ -16,10 +16,10 @@ const DialogBox = ({ open, handleClose, wordInfo }) => {
     >
       <DialogNav handleClose={handleClose} />
       <DialogContent>
-        <h2>{title}</h2>
-        <p>{definition}</p>
+        <h2 className={styles.title}>{title}</h2>
+        <p className={styles.definition}>{definition}</p>
         <ControlledSwitch />
-        <span>QUESTION TIMER</span>
+        <span className={styles.questionTimer}>QUESTION TIMER</span>
       </DialogContent>
     </Dialog>
   );

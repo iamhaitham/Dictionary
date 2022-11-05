@@ -20,15 +20,10 @@ const MainPage = () => {
     setOpen(!open);
   };
   return (
-    <Box
-      display="flex"
-      justifyContent="center"
-          height="100vh"
-          
-    >
+    <Box display="flex" justifyContent="center" height="100vh">
       <div>
         <Logo />
-        <Card handleClose={handleClose} />
+        <Card handleClose={handleClose} open={open} />
 
         {open && (
           <div>
