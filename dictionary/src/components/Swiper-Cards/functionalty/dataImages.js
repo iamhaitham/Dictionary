@@ -3,6 +3,7 @@ import Img2 from "../images/book.png"
 import Img3 from "../images/stars-background-light.png"
 import Img4 from "../images/flow.png"
 
+
 const images = [
     {
         url: Img1,
