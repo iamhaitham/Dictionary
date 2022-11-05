@@ -1,12 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import SwiperCards from './components/Swiper-Cards';
+import MainPage from "./MainPage/MainPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <SwiperCards/>
-    </div>
+    <>
+      <MainPage/>
+    </>
   );
 }
 
