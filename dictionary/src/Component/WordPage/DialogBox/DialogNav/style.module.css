@@ -1,3 +1,6 @@
 .replyIcon,.closeIcon {
     color:#0f7ce4;
 }
+.replyIcon{
+    transform: scaleX(-1)
+}
