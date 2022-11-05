@@ -1,26 +1,29 @@
-import Img1 from "../images/mountain.png"
-import Img2 from "../images/mountain1.png"
+import Img1 from "../images/rain.png"
+import Img2 from "../images/book.png"
+import Img3 from "../images/stars-background-light.png"
+import Img4 from "../images/flow.png"
+
 const images = [
     {
         url: Img1,
-        caption: "Rush",
+        caption: "Rain",
         text: "SWORD OF 37C"
     },
     {
         url: Img2,
-        caption: "M2",
+        caption: "Book",
         text: "SWORD OF 37C"
 
     },
     {
-        url: Img1,
-        caption: "M3",
+        url: Img3,
+        caption: "Stars",
         text: "SWORD OF 37C"
 
     },
     {
-        url: Img2,
-        caption: "M4",
+        url: Img4,
+        caption: "Flowers",
         text: "SWORD OF 37C"
 
     },
