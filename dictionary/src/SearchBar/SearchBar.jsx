@@ -41,6 +41,7 @@ const SearchBar = ({
             console.log(response.data[0])
             setIsLoading(false);
             setIsSearchTermNotFound(false);
+            setIsOpen(false);
         } catch (error) {
             setIsLoading(false);
             setIsSearchTermNotFound(true);
