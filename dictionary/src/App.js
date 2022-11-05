@@ -1,8 +1,10 @@
-import SearchBar from "./SearchBar/SearchBar"
+import MainPage from "./MainPage/MainPage";
 
 const App = () => {
   return (
-    <SearchBar/>
+    <>
+      <MainPage/>
+    </>
   );
 }
 
