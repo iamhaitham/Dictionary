@@ -3,13 +3,23 @@ import SearchBar from "../SearchBar/SearchBar"
 import ToastNotification from "../shared/ToastNotification/ToastNotification"
 
 const MainPage = () => {
-    const [isSearchTermNotFound, setIsSearchTermNotFound] = useState(false);
-    const [notificationContent, setNotificationContent] = useState();
-    const [notificationSeverity, setNotificationSeverity] = useState();
-    const [notificationWidth, setNotificationWidth] = useState();
-    const [isOpen, setIsOpen] = useState(false);
+    const [errorNotification, setErrorNotification] = useState({
+        isSearchTermNotFound: false,
+        notificationContent: '',
+        notificationSeverity: '',
+        notificationWidth: '100%',
+        isOpen: false
+    });
 
     const showToastNotification = () => {
+        const { 
+            isSearchTermNotFound,
+            notificationContent, 
+            notificationSeverity, 
+            notificationWidth,
+            isOpen
+        } = errorNotification;
+
         if (isSearchTermNotFound)
             return (
                 <ToastNotification notificationContent={ notificationContent }
@@ -21,11 +31,8 @@ const MainPage = () => {
 
     return (
     <>
-        <SearchBar setIsSearchTermNotFound={ setIsSearchTermNotFound }
-                   setNotificationContent={ setNotificationContent }
-                   setNotificationSeverity={ setNotificationSeverity }
-                   setNotificationWidth={ setNotificationWidth }
-                   setIsOpen={ setIsOpen }/>
+        <SearchBar errorNotification={ errorNotification } 
+                   setErrorNotification={ setErrorNotification }/>
         { showToastNotification() }
     </>
     )
