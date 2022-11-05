@@ -1,6 +1,8 @@
 import './index.css';
 import React from 'react'
 import ImageSection from './functionalty/ImageSection';
+
+
 const Swiper_Cards = () => {
   return (
     <div className='Container'>

@@ -5,6 +5,8 @@ import 'react-slideshow-image/dist/styles.css'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import "../index.css"
+
+
 const ImageSection = () => {
     return (
         <div style={{ width: "100%", height: "100%" }}>
