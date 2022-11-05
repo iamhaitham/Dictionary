@@ -9,7 +9,13 @@ import Wrapper from '../shared/Wrapper/Wrapper';
 import { useState } from 'react';
 import axios from 'axios';
 
-const SearchBar = () => {
+const SearchBar = ({ 
+    setIsSearchTermNotFound,
+    setNotificationContent,
+    setNotificationSeverity,
+    setNotificationWidth,
+    setIsOpen
+ }) => {
     const [searchTerm, setSearchTerm] = useState('');
     const [isLoading, setIsLoading] = useState(false);
 
@@ -34,9 +40,14 @@ const SearchBar = () => {
             const response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchTerm}`);
             console.log(response.data[0])
             setIsLoading(false);
+            setIsSearchTermNotFound(false);
         } catch (error) {
-            console.log(error);
             setIsLoading(false);
+            setIsSearchTermNotFound(true);
+            setNotificationContent('The search term is not found!');
+            setNotificationSeverity('error');
+            setNotificationWidth('100%');
+            setIsOpen(true);
         }
     }
 
@@ -80,4 +91,4 @@ const SearchBar = () => {
     )
 }
 
-export default SearchBar
+export default SearchBar;
