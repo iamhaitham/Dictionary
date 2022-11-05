@@ -6,9 +6,7 @@ const Swiper_Cards = () => {
   return (
     <div className='Container'>
       <div className='SecondContainer'>
-        <Slide arrows={false} autoplay={false} pauseOnHover={true}>
           <ImageSection />
-        </Slide>
       </div>
     </div>
   );

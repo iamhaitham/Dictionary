@@ -6,6 +6,7 @@
     width: 60vw;
     height: auto;
 }
+
 .button_image{
     width: 60vw;
     height: 30px;
@@ -16,29 +17,29 @@
     justify-content: space-between;
 }
 .ArrowForward{
-    color:"white";
-    justify-self:"flex-end"
+    color:white;
+    justify-self:flex-end
 }
 .caption{
-    color:"white"
+    color:white
 }
 .textInsideImage{
-    position: "absolute";
-    width: "50px"; 
-    font-size: "10px";
-    color: "red"
+    position: absolute;
+    width: 50px; 
+    font-size: 10px;
+    color: red !important;
 }
 .ImageContainer{
-    display: "flex";
-    flex-direction: "column";
-    justify-content: "center";
-    align-items: "center"
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
 }
 .Container{
     width: 100%;
     height: 100%;
 }
 .SecondContainer{
-    width: "100%";
-    height: "20%";
+    width: 100%;
+    height: 20%;
 }
