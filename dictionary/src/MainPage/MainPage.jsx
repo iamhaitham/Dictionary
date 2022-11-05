@@ -30,11 +30,11 @@ const MainPage = () => {
     }
 
     return (
-    <>
-        <SearchBar errorNotification={ errorNotification } 
-                   setErrorNotification={ setErrorNotification }/>
-        { showToastNotification() }
-    </>
+        <>
+            <SearchBar errorNotification={ errorNotification } 
+                    setErrorNotification={ setErrorNotification }/>
+            { showToastNotification() }
+        </>
     )
 }
 
