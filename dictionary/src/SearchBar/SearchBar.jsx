@@ -36,15 +36,13 @@ const SearchBar = ({ errorNotification, setErrorNotification }) => {
             setIsLoading(false);
             setErrorNotification({ 
                 ...errorNotification, 
-                isSearchTermNotFound: false, 
-                isOpen: false 
+                isSearchTermNotFound: false
             });
         } catch (error) {
             setIsLoading(false);
             setErrorNotification({ 
                 ...errorNotification, 
-                isSearchTermNotFound: true, 
-                isOpen: true,
+                isSearchTermNotFound: true,
                 notificationContent: 'The search term is not found!',
                 notificationSeverity: 'error',
                 notificationWidth: '100%'

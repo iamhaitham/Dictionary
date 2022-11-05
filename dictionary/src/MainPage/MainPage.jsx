@@ -8,24 +8,21 @@ const MainPage = () => {
         notificationContent: '',
         notificationSeverity: '',
         notificationWidth: '100%',
-        isOpen: false
     });
 
     const showToastNotification = () => {
         const { 
-            isSearchTermNotFound,
             notificationContent, 
             notificationSeverity, 
             notificationWidth,
-            isOpen
         } = errorNotification;
 
-        if (isSearchTermNotFound)
             return (
                 <ToastNotification notificationContent={ notificationContent }
                                    severity={ notificationSeverity }
                                    width={ notificationWidth }
-                                   isSnackBarOpen={ isOpen }/>
+                                   errorNotification={ errorNotification }
+                                   setErrorNotification={ setErrorNotification }/>
             );
     }
 
