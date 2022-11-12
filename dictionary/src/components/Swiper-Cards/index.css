@@ -9,19 +9,20 @@
 }
 
 .button_image {
-    width: 67.5vw;
-    height: 40px;
-    margin-top: -1%;
-    background-color: black;
-    text-align: left;
     display: flex;
-    align-items: center;
+    width: 70vw;
     justify-content: space-between;
+    align-items: center;
+    border-width: 1px;
+    background-color: black;
+    color:white;
 }
-
+.divcot{
+    width:80%;
+}
 .ArrowForward {
+    display: flex;
     color: white;
-    justify-self: flex-end
 }
 
 .caption {
@@ -80,7 +81,9 @@
 }
 
 .imgs {
+    display: flex;
     width: 70vw;
     height: 220px;
-    margin-left: -35%;
+    justify-content: left;
+    align-items: center;
 }
