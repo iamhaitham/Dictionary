@@ -1,0 +1,86 @@
+.listItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-slider {
+    width: 60vw;
+    height: auto;
+}
+
+.button_image {
+    width: 67.5vw;
+    height: 40px;
+    margin-top: -1%;
+    background-color: black;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ArrowForward {
+    color: white;
+    justify-self: flex-end
+}
+
+.caption {
+    color: white
+}
+
+.textInsideImage {
+    position: absolute;
+    width: 50px;
+    font-size: 10px;
+    color: red;
+    margin-left: "30%";
+}
+
+.ImageContainer {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center
+}
+
+.SecondCont {
+    justify-content: center;
+    margin-left: 50%
+}
+
+.FirstCont {
+    width: 100%;
+    height: 100%;
+}
+
+.ImageCont {
+    width: 100%;
+    height: 100%;
+}
+
+.AfterImage {
+    position: absolute;
+    width: 60vw;
+    height: auto;
+    margin-left: -10%;
+
+}
+
+.Container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.SecondContainer {
+    width: 100%;
+    height: 20%;
+}
+
+.imgs {
+    width: 70vw;
+    height: 220px;
+    margin-left: -35%;
+}
