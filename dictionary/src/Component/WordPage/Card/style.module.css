@@ -1,0 +1,28 @@
+.cardWrapper {
+  padding-top: 20px;
+  background-color: rgb(245, 245, 245);
+}
+.card {
+  width: 400px;
+  height: 400px;
+}
+/* 
+.cardImageFull {
+  animation: DialogMove 4s ease;
+}
+
+@keyframes DialogMove {
+  from {
+    width: auto;
+    height: auto;
+
+  }
+  to {
+    width: 100%;
+        position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+  }
+} */

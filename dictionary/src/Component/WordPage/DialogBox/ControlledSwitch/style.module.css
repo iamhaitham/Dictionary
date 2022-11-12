@@ -1,0 +1,20 @@
+.dialog {
+  /* border: 5px solid #0f0;
+  background-image: url("https://i.pngimg.me/thumb/f/720/comrawpixel4007649.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-size: contain;
+  z-index: 100; */
+  /* background-color: red; */
+  z-index: 10 !important;
+}
+
+.p {
+  position: absolute;
+
+}
+.eastIcon{
+  position: absolute;
+  right: 50%;
+  bottom: 20px;
+}

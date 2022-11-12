@@ -1,0 +1,31 @@
+.icon {
+  color:#3f95e7;
+  animation: iconOpacity 1s;
+}
+.iconWrapper {
+  z-index: 2000;
+  position: absolute !important;
+  background-color: #fff !important;
+  bottom: 20px;
+  left: 50%;
+  display: block;
+  animation: iconOpacity2 3s;
+}
+
+@keyframes iconOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes iconOpacity2 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

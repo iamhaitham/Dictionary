@@ -1,11 +1,12 @@
-import MainPage from "./MainPage/MainPage";
+import "./App.css";
+import MainPage from "./Component/WordPage/MainPage";
 
 const App = () => {
   return (
     <>
-      <MainPage/>
+      <MainPage />
     </>
   );
-}
+};
 
 export default App;
