@@ -4,9 +4,9 @@ import Swipper from "./Component/AliceCarousel/index";
 
 function App() {
   return (
-    <div className="App">
-      {/* <MainPage /> */}
-      <Swipper />
+    // <MainPage />
+    <div style={{margin :"70px 0"}}>
+   <Swipper/>
     </div>
   );
 }

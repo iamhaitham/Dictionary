@@ -7,7 +7,7 @@ import { Container, Grid } from "@mui/material";
 
 const DialogNav = ({ handleClose }) => {
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl">
       <Grid container justifyContent="space-between">
         <Grid item xs={1}>
           <IconButton
