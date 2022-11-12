@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Card from "../Card";
 import SearchBar from "../../../SearchBar/SearchBar";
 import ToastNotification from "../../../shared/ToastNotification/ToastNotification";
+import Swipper from "../../AliceCarousel";
 
 const MainPage = () => {
   const [errorNotification, setErrorNotification] = useState({
@@ -53,7 +54,7 @@ const MainPage = () => {
         />
         {showToastNotification()}
         <Card handleClose={handleClose} open={open} />
-
+<Swipper/>
         {open && (
           <div>
             <DialogBox
