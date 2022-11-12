@@ -5,8 +5,31 @@ import Logo from "../Logo";
 import Icons from "../Icons";
 import Box from "@mui/material/Box";
 import Card from "../Card";
+import SearchBar from "../../../SearchBar/SearchBar";
+import ToastNotification from "../../../shared/ToastNotification/ToastNotification";
 
 const MainPage = () => {
+  const [errorNotification, setErrorNotification] = useState({
+    isSearchTermNotFound: false,
+    notificationContent: "",
+    notificationSeverity: "",
+    notificationWidth: "100%",
+  });
+
+  const showToastNotification = () => {
+    const { notificationContent, notificationSeverity, notificationWidth } =
+      errorNotification;
+
+    return (
+      <ToastNotification
+        notificationContent={notificationContent}
+        severity={notificationSeverity}
+        width={notificationWidth}
+        errorNotification={errorNotification}
+        setErrorNotification={setErrorNotification}
+      />
+    );
+  };
   const cardData = [
     {
       id: 1,
@@ -23,6 +46,12 @@ const MainPage = () => {
     <Box display="flex" justifyContent="center" height="100vh">
       <div>
         <Logo />
+
+        <SearchBar
+          errorNotification={errorNotification}
+          setErrorNotification={setErrorNotification}
+        />
+        {showToastNotification()}
         <Card handleClose={handleClose} open={open} />
 
         {open && (
