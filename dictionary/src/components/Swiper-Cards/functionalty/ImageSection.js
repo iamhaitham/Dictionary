@@ -10,17 +10,17 @@ import "../index.css"
 const ImageSection = () => {
     return (
         <div className="FirstCon">
-            <div className='SecondCon'>
-            </div>
-            <div>
-                <AliceCarousel mouseTracking items={images.map((item) => <div>
+            <AliceCarousel mouseTracking items={images.map((item) =>
+                <div className='divcot'>
                     <img src={item.url} className="imgs" />
-                    <div className='button_image'>
-                        <p className='caption'>{item.caption}</p>
-                        <span className='ArrowForward'><ArrowForward /></span>
-                    </div>
-                </div>)} autoWidth={true} disableButtonsControls />
-            </div>
+                    <span className='button_image'>
+                        <p>{item.caption}</p>
+                        <ArrowForward className="ArrowForward" />
+                    </span>
+                </div>
+
+
+            )} autoWidth={true} disableButtonsControls />
 
         </div>
     )
